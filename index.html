@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutmegs Poem</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Cormorant Garamond", serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f7f5f2;
+      color: #2c2c2c;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(255,255,255,0) 60%,
+        rgba(0,0,0,0.12) 100%
+      );
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 18px;
+      border: 1px solid rgba(0,0,0,0.08);
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 720px;
+      padding: 60px 30px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .poem {
+      white-space: pre-line;
+      font-size: 1.25rem;
+      line-height: 1.7;
+    }
+
+    .title {
+      font-size: 1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      color: #777;
+    }
+
+    .signature {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .poem {
+        font-size: 1.05rem;
+      }
+      .container {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <div class="title">A Better Nutmeg World</div>
+
+    <div class="poem">
+Love is rarely a straight line  
+it moves like the ebb and flow of the world.  
+Skies collapse in thunder and rain,  
+then open wide,  
+Warm sunshine stretching across the plains.
+
+There are no promises of steady skies,  
+no guarantee of only gentle days  
+but knowing I have you beside me  
+is more than enough to fight,  
+more than enough to stay.
+
+If love is a battlefield,  
+then our victory cannot be won alone.
+It must be cultivated, together as one  
+deriving a profound happiness, 
+outliving both space and time.  
+
+When you have your doubts
+Come back to this.
+No matter if the skies are blue,  
+or when the storms come in,
+know these two scriptures, always constant and true:  
+
+the world is a better place because of you.
+And more importantly,
+<em>my world is better because it is 
+    <strong>with you.</strong></em>
+    </div>
+
+    <div class="signature">
+      — Written and Deployed For Nutmeg from Steviekins
+    </div>
+
+  </div>
+</body>
+</html>
